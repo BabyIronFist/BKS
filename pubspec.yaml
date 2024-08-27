@@ -1,0 +1,45 @@
+name: bks
+description: "记事本"
+publish_to: 'none' # 如果你想发布到pub.dev，可以移除这行
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 使用的图标库
+  cupertino_icons: ^1.0.6
+
+  # 用于生成唯一ID的库（用于Todo项的id）
+  uuid: ^3.0.7
+
+  hive: ^2.0.0
+  hive_flutter: ^1.0.0
+  path_provider: ^2.0.0
+
+dev_dependencies:
+  hive_generator: ^1.1.0
+  build_runner: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # 如果有图片资源，可以在此处添加
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  # 如果有自定义字体，可以在此处添加
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
